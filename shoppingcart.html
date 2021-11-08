@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Shopping Cart</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link href='https://fonts.googleapis.com/css?family=Sansita' rel='stylesheet'>
+      <script src=scripts.js></script>
+   </head>
+   <body class=shoppingcart>
+      <header>
+         <a href=index.html class= inactive>
+            <img src= roll2.png class=lala alt=roll>
+            <h1 class= toplogo>Bun Bun</h1>
+            <h2 class= toplogo2>Bake Shop</h2>
+         </a>
+         <!-- Nav Bar -->
+         <nav>
+            <ul>
+               <li><a href=index.html class= inactive>Home</a></li>
+               <li><a href=index.html class= inactive>About Us</a></li>
+               <li><a href=Shop.html class= inactive>Shop </a></li>
+               <li><a href=index.html class= inactive>Contact Us</a></li>
+               <li><a href= shoppingcart.html onload="buttonClick()"><img src= cart3.png alt=cart>
+                  </a><input class=cartcount type="text" id="inc" disabled>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div>
+         <h4 class=breadcrumb> Home > My Shopping Cart </h4>
+         <h3 class=heading>My Shopping Cart</h3>
+      </div>
+      <!--Shopping Cart-->
+      <div class=Cart-Container>
+         <div class=cartheader>Product</div>
+         <div class=cartheader2>Price</div>
+         <div class=cartheader3>Quantity</div>
+         <div class=products>
+         </div>
+         <hr>
+         <div class=checkout>
+            <div class=total>
+               <div>
+                  <div class=Subtotal>Sub-Total</div>
+                  <div class=items>Without tax</div>
+               </div>
+               <div class=total-amount>$ <span id="infoSpan"></span></div>
+            </div>
+            <button class=button>Checkout</button>
+         </div>
+      </div>
+      <!-- Footer -->
+      <div class= footer>
+         <a href="http://www.facebook.com" target="_blank"><img src=facebook.png alt=fb></a>
+         <a href="http://www.instagram.com" target="_blank"><img src=email.png alt=email></a>
+      </div>
+   </body>
+</html>

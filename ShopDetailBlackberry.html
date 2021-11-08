@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Blackberry</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link href='https://fonts.googleapis.com/css?family=Sansita' rel='stylesheet'>
+      <script src=scripts.js></script>
+   </head>
+   <body class=shop>
+      <header>
+         <img src= roll2.png class=lala alt=roll>
+         <h1 class= toplogo>Bun Bun</h1>
+         <h2 class= toplogo2>Bake Shop</h2>
+         <nav>
+            <ul>
+               <li><a href=index.html class= inactive>Home</a></li>
+               <li><a href=index.html class= inactive>About Us</a></li>
+               <li><a href=Shop.html class= active>Shop </a></li>
+               <li><a href=index.html class= inactive>Contact Us</a></li>
+               <li><a href= shoppingcart.html onload="buttonClick()"><img src= cart3.png alt=cart>
+                  </a><input class=cartcount type="text" id="inc" disabled>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div>
+         <h4 class=breadcrumb> Home > Shop > Blackberry </h4>
+         <h3 class=heading>Shop</h3>
+         <img src= label4.png class=shop1detaillabel alt=label4>
+         <a href=ShopDetailOriginal.html class=active><img src= shop4detail.png class=shop1detail alt=shop1detailabel></a> 
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin justo erat, sollicitudin nec varius vel, laoreet nec lorem. neque.<br> <br> 
+            Allergens: Milk, eggs. Made in a facility that processes peanuts and tree nuts. 
+            <br><br>
+            Glaze: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Quantity:
+            <label for="glaze"></label>
+            <!-- dropdown for custom glaze -->
+         <div class=custom-select>
+            <select id="glaze">
+               <option id=1 value=1 selected="selected">None</option>
+               <option id=2 value=2>Vanilla-Milk</option>
+               <option id=3 value=3>Sugar-Milk</option>
+               <option id=4 value=4>Double-Chocolate</option>
+            </select>
+         </div>
+         <!-- dropdown for custom quantity -->
+         <div class=custom-select2>
+            <select id="quan" >
+               <option id=5 value=5 selected="selected">1</option>
+               <option id=6 value=6>3</option>
+               <option id=7 value=7>6</option>
+               <option id=8 value=8>12</option>
+            </select>
+         </div>
+         <!-- button for add to cart -->
+         <button class=addtocart onclick="buttonClick(); toggleText(); toggleText2();">Add to Cart</button>
+         <!-- feedback for add to cart -->
+         <p class=adddetail2 id="demo2"></p>
+         <p class=adddetail3 id="demo3" style='display: none'>Pastries with</p>
+         <p class=adddetail id="demo"></p>
+         <p class=adddetail4 id="demo4" style='display: none'>glazing were added to the cart</p>
+         <a href=Shop.html>
+            <!-- button to return to all products -->
+            <h3 class=seeallprod><img src= back.png class=back alt=back>Return to Shop</h3>
+         </a>
+      </div>
+
+      <!-- Slideshow to show similar products -->
+      <div class=slide>
+         <h5 class=headslide> You may also like:</h5>
+         <div class="slideshow-container">
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 3</div>
+               <div> <img src=shop5.png style="width:100%" alt=lala></div>
+               <div class="text">Walnut</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 3</div>
+               <div> <img src=shop3.png style="width:100%" alt=lala></div>
+               <div class="text">Peanut</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 3</div>
+               <div> <img src=shop1.png style="width:100%" alt=lala></div>
+               <div class="text">Treenut</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+         </div>
+      </div>
+      <!-- footer -->
+      <div class=footer>
+         <a href="http://www.facebook.com" target="_blank"><img src=facebook.png alt=fb></a>
+         <a href="http://www.instagram.com" target="_blank"><img src=email.png alt=email></a>
+      </div>
+   </body>
+</html>

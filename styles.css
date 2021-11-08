@@ -1,0 +1,852 @@
+/*Source that I used throughout: W3 Schools*/
+/*I also used UX planet and ModernCSS.dev for shopping cart UI and css of dropdown as well as better programming for the slideshow*/
+ body.shoppingcart{
+     background-color: #F3D3D3;
+     padding:60%;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: #F3D3D3;
+     color: black;
+     height: 100%;
+     width: 100%;
+     padding-bottom: 900px;
+}
+ body.home {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     color: black;
+     height: 100%;
+     width: 100%;
+     background-image: url(cinnabon.png);
+}
+/*Body for the home page*/
+ body.shop {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: #F3D3D3;
+     color: black;
+     height: 100%;
+     width: 100%;
+     padding-bottom: 80%;
+}
+/*Body for the shop page*/
+ h1 {
+     font-family: 'Sansita', Bold, sans-serif;
+     color: white;
+     font-style: normal;
+     font-size: 100px;
+     text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    /*https://www.generacodice.com/en/articolo/1150435/css-is-it-possible-to-add-a-black-outline-around-each-character-in-text*/
+     line-height: 30px;
+     position: absolute;
+     top: 50%;
+     left: 25%;
+     text-align: center;
+     vertical-align: top;
+}
+/*Heading for the home page*/
+ h2 {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 80px;
+     color: white;
+     text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    /*https://www.generacodice.com/en/articolo/1150435/css-is-it-possible-to-add-a-black-outline-around-each-character-in-text*/
+     line-height: 10px;
+     position: absolute;
+     top: 250%;
+     left: 25%;
+}
+/*Heading for the home page*/
+ h3.home {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 40px;
+     color: black;
+     position: absolute;
+     width: 180px;
+     height: 50px;
+     top: 420px;
+     left: 37%;
+     text-align: center;
+     background: #DB8585;
+     border: 3px solid #FFFFFF;
+     box-sizing: content-box;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+ div.homediv {
+     position: absolute;
+     width: 50%;
+     height: 50px;
+     left: 25%;
+     top: 200px;
+}
+/*Nav Bar*/
+ nav {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 40px;
+     background-color: transparent;
+     text-align: right;
+     line-height: 30px;
+     position: absolute;
+     left: 43%;
+}
+ li {
+     display: inline;
+     margin-right: 20px;
+}
+ a:hover {
+     border-bottom: 3px solid #fff;
+     color: white;
+}
+ a {
+     text-decoration: none;
+     color: black;
+}
+ a.active {
+     border-bottom: 3px solid #fff;
+     color: white;
+}
+ .lala {
+     position: relative;
+     top: 150%;
+}
+/*Logo for the top left corner for every page other than home*/
+ h1.toplogo {
+     font-family: 'Sansita', Bold, sans-serif;
+     color: white;
+     font-style: normal;
+     font-size: 60px;
+     text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    /*https://www.generacodice.com/en/articolo/1150435/css-is-it-possible-to-add-a-black-outline-around-each-character-in-text*/
+     line-height: 10px;
+     text-align: center;
+     vertical-align: top;
+     position: absolute;
+     top: -2%;
+     left: 12%;
+}
+/*Logo for the top left corner for every page other than home*/
+ h2.toplogo2 {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 60px;
+     color: white;
+     text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    /*https://www.generacodice.com/en/articolo/1150435/css-is-it-possible-to-add-a-black-outline-around-each-character-in-text*/
+     position: absolute;
+     top: 8%;
+     left: 12%;
+}
+/*Heading for the Shop Page*/
+ h3.heading {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 40px;
+     position: absolute;
+     left: 10%;
+     top: 30%;
+}
+ h3.heading2 {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 40px;
+     position: absolute;
+     left: 10%;
+     top: 30%;
+}
+/*Breadcrumb for the top of each page*/
+ h4.breadcrumb {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 15px;
+     position: absolute;
+     left: 10%;
+     top: 25%;
+}
+/*Additional Nav Styling*/
+ nav {
+     position: absolute;
+     top: 10px;
+}
+/*Images in the Shop page*/
+ img.shop4 {
+     position: absolute;
+     left: 10%;
+     top: 57%;
+}
+ img.shop1detail {
+     position: absolute;
+     left: 10%;
+     top: 55%;
+}
+ img.shop1detaillabel {
+     position: absolute;
+     left: 10%;
+     top: 50%;
+}
+ img.label4 {
+     position: absolute;
+     left: 10%;
+     top: 50% 
+}
+ img.shop6 {
+     position: absolute;
+     left: 40%;
+     top: 57%;
+}
+ img.label6 {
+     position: absolute;
+     left: 40%;
+     top: 50% 
+}
+ img.shop1 {
+     position: absolute;
+     left: 71%;
+     top: 57%;
+}
+ img.label1 {
+     position: absolute;
+     left: 71%;
+     top: 50% 
+}
+ img.labelstar {
+     position: absolute;
+     left: 78%;
+     top: 49% 
+}
+ img.shop2 {
+     position: absolute;
+     left: 10%;
+     top: 120%;
+}
+ img.label2 {
+     position: absolute;
+     left: 10%;
+     top: 112%;
+}
+ img.shop5 {
+     position: absolute;
+     left: 40%;
+     top: 120%;
+}
+ img.label5 {
+     position: absolute;
+     left: 40%;
+     top: 112%;
+}
+ img.shop3 {
+     position: absolute;
+     left: 71%;
+     top: 120%;
+}
+ img.label3 {
+     position: absolute;
+     left: 71%;
+     top: 112%;
+     bottom: 20%;
+}
+/*Button on the shop detail page*/
+ h3.seeallprod {
+     font-family: 'Sansita', Bold, sans-serif;
+     font-style: normal;
+     font-size: 35px;
+     color: black;
+     position: absolute;
+     width: 270px;
+     height: 45px;
+     text-align: left;
+     background: #DB8585;
+     border: 3px solid black;
+     box-sizing: content-box;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     position: absolute;
+     left: 10%;
+     top: 130%;
+}
+ img.back {
+     float: left;
+}
+ h4 {
+     position: absolute;
+     left: 750px;
+     font-size: 25px;
+     top: 300px;
+}
+ p {
+     position: absolute;
+     left: 58%;
+     font-size: 25px;
+     top: 50%;
+     font-family: 'Sansita', sans-serif;
+}
+ h3.addtocart {
+     font-family: 'Sansita', sans-serif;
+     font-size: 30px;
+     color: white;
+     position: absolute;
+     width: 210px;
+     height: 40px;
+     top: 105%;
+     left: 58%;
+     text-align: left;
+     background: #DB8585;
+     border: 3px solid black;
+     box-sizing: content-box;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*Footer*/
+ .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.7);
+     border: black;
+     color: white;
+     text-align: center;
+}
+/*Shopping Cart*/
+ .image-box{
+     width: 20%;
+     float:left;
+     align-items:center;
+     display:flex;
+}
+ .about{
+     align-items:top;
+     height: 1%;
+     width:30%;
+     float:left;
+     display:flex;
+}
+ h6.title{
+     padding-top: 0px;
+     line-height: 0px;
+     font-size: 25px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 800;
+     color: #202020;
+     display:flex;
+}
+ h6.subtitle{
+     line-height: 0px;
+     font-size: 18px;
+     width:600%;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 600;
+     color: #909090;
+     display:flex;
+     align-items:center;
+}
+ .counter{
+     width: 15%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     float:right;
+}
+ .btn{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: #d9d9d9;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 900;
+     color: #202020;
+     cursor: pointer;
+}
+ .count{
+     font-size: 20px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 900;
+     color: #202020;
+}
+ .prices{
+     width:20%;
+     height: 10%;
+     align-items: center;
+}
+ .amount{
+     padding-top: 20px;
+     font-size: 26px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 800;
+     color: #202020;
+     display:flex;
+}
+ .save{
+     padding-top: 5px;
+     font-size: 14px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 600;
+     color: #1687d9;
+     cursor: pointer;
+}
+ .remove{
+     padding-top: 5px;
+     font-size: 14px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 600;
+     color: #E44C4C;
+     cursor: pointer;
+}
+ hr{
+     width: 66%;
+     float: right;
+     margin-right: 5%;
+}
+ .checkout{
+     float: right;
+     margin-right: 5%;
+     width: 28%;
+}
+ .total{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+}
+ .Subtotal{
+     font-size: 22px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 700;
+     color: #202020;
+}
+ .items{
+     font-size: 16px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 500;
+     color: #909090;
+     line-height: 10px;
+}
+ .total-amount{
+     font-size: 36px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 900;
+     color: #202020;
+}
+/* Dropdown Button */
+ .dropbtn {
+     background-color: #DB8585;
+     color: white;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     width: 200px;
+     height: 40px;
+     font-family: 'Sansita', sans-serif;
+}
+/* Dropdown button on hover & focus */
+ .dropbtn:hover, .dropbtn:focus {
+     background-color: #F3D3D3;
+}
+/* The container <div> - needed to position the dropdown content */
+ .dropdown {
+     position: absolute;
+     top: 95%;
+     left: 58%;
+     display: inline-block;
+     border: 3px solid black;
+     font-size: 30px;
+}
+ .dropdown2 {
+     position: absolute;
+     top: 95%;
+     left: 78%;
+     display: inline-block;
+     border: 3px solid black;
+}
+/* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #F3D3D3;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+/* Change color of dropdown links on hover */
+ .dropdown-content a:hover {
+     background-color: #DB8585 
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+ .show {
+     display:block;
+}
+ h3.glaze {
+     font-family: 'Sansita', sans-serif;
+     font-size: 30px;
+     color: black;
+     position: absolute;
+     width: 200px;
+     height: 40px;
+     top: 90%;
+     left: 58%;
+     text-align: left;
+     background: #DB8585;
+     border: 3px solid black;
+     box-sizing: content-box;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+ h3.quantity {
+     font-family: 'Sansita', sans-serif;
+     font-size: 30px;
+     color: black;
+     position: absolute;
+     width: 200px;
+     height: 40px;
+     top: 90%;
+     left: 75%;
+     text-align: left;
+     background: #DB8585;
+     border: 3px solid black;
+     box-sizing: content-box;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+ img.dropdown {
+     position: absolute;
+     top:10%;
+     left:77%;
+}
+ *, *::before, *::after {
+     box-sizing: border-box;
+}
+/*Dropdown for customization*/
+ select {
+     appearance: none;
+     background-color: transparent;
+     border: none;
+     padding: 0 1em 0 0;
+     margin: 0;
+     width: 100%;
+     font-family: inherit;
+     font-size: inherit;
+     cursor: inherit;
+     line-height: inherit;
+}
+ .custom-select {
+     position:absolute;
+     top:98%;
+     left:58%;
+     width: 50%;
+     min-width: 5ch;
+     max-width: 15ch;
+     border: 1px solid var(--select-border);
+     border-radius: 0.25em;
+     padding: 0.25em 0.5em;
+     font-size: 1.5rem;
+     cursor: pointer;
+     line-height: 1.1;
+     background-color: #fff;
+     background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+     border: 3px solid black;
+     font-family: 'Sansita', sans-serif;
+}
+ .custom-select2 {
+     position:absolute;
+     top:98%;
+     left:78%;
+     width: 50%;
+     font-size:30px;
+     min-width: 5ch;
+     max-width: 15ch;
+     border: 1px solid var(--select-border);
+     border-radius: 0.25em;
+     padding: 0.25em 0.5em;
+     font-size: 1.5rem;
+     cursor: pointer;
+     line-height: 1.1;
+     background-color: #fff;
+     background-image: linear-gradient(to top, #fff, #fff 33%);
+     border: 3px solid black;
+     font-family: 'Sansita', sans-serif;
+}
+ button.addtocart{
+     position: absolute;
+     width: 200px;
+     height: 50px;
+     cursor: pointer;
+     top: 110%;
+     left: 58%;
+     border: 3px solid black;
+     font-family: 'Sansita', sans-serif;
+     background-color: #DB8585;
+     border-radius: 0.25em;
+     padding: 0.25em 0.5em;
+     font-size: 1.5rem;
+}
+ button:hover{
+     background-color: white;
+}
+/*reponse when items are added to cart both text and counter in cart*/
+ .cartcount{
+     position:absolute;
+     top:21%;
+     left:92.5%;
+     width:23px;
+     text-align:center;
+     background-color: #DB8585;
+     border-radius: 0.25em;
+     color: white;
+     font-family: 'Sansita', sans-serif;
+}
+ p.adddetail{
+     position:absolute;
+     top:120%;
+     left:67.5%;
+     width:150px;
+     text-align:center;
+     background-color: #DB8585;
+     border-radius: 0.25em;
+     color: white;
+     font-family: 'Sansita', sans-serif;
+     font-size:15px;
+}
+ p.adddetail2{
+     position:absolute;
+     top:120%;
+     left:57%;
+     width:30px;
+     text-align:center;
+     background-color: #DB8585;
+     border-radius: 0.25em;
+     color: white;
+     font-family: 'Sansita', sans-serif;
+     font-size:15px;
+}
+ p.adddetail3{
+     position:absolute;
+     top:120%;
+     left:60%;
+     width:90px;
+     text-align:center;
+     background-color: #DB8585;
+     border-radius: 0.25em;
+     color: white;
+     font-family: 'Sansita', sans-serif;
+     font-size:15px;
+}
+ p.adddetail4{
+     position:absolute;
+     top:120%;
+     left:80%;
+     width:190px;
+     text-align:center;
+     background-color: #DB8585;
+     border-radius: 0.25em;
+     color: white;
+     font-family: 'Sansita', sans-serif;
+     font-size:15px;
+}
+ p.adddetail5{
+     position:absolute;
+     top:10%;
+     left:80%;
+     width:190px;
+     text-align:center;
+     background-color: #DB8585;
+     border-radius: 0.25em;
+     color: white;
+     font-family: 'Sansita', sans-serif;
+     font-size:15px;
+}
+/*Add to cart response*/
+ .addtocart:active {
+     background-color: #DB8585;
+}
+/*All Buttons*/
+ .button{
+     margin-top: 5px;
+     width: 100%;
+     height: 40px;
+     border: none;
+     background: linear-gradient(to bottom right, #F3D3D3, #DB8585);
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 16px;
+     font-family: 'Sansita', sans-serif;
+     font-weight: 600;
+     color: #202020;
+}
+ .product-header{
+     width:100% max-width:650px;
+     display:flex;
+     justify-content:flex-start;
+     border-bottom:4px solid lightgrey;
+     margin:10% auto;
+}
+ .product-title{
+     width:45%;
+}
+ .glaze{
+     width:20%;
+     display:flex;
+     align-items:center;
+}
+ .quantity{
+    width:30%;
+     display:flex;
+     align-items:center;
+}
+ .Cart-Items{
+     width: 100%;
+     height: 20%;
+     left: 10%;
+     align-items:right;
+     justify-content:flex-start;
+}
+ .Cart-Container{
+     justify-content: space-around;
+     margin: 11%;
+     width:80%;
+     background: #f4f5f4;
+     min-height: 600px;
+     box-shadow: 0px 25px 40px #DB8585;
+     border-radius: 20px;
+     padding:10%;
+}
+ .Cart-Items{
+     width: 100%;
+     height: 20%;
+     display: flex;
+     align-items:center;
+}
+ .cartheader{
+     font-family: 'Sansita', sans-serif;
+     font-size:30px;
+     float:left;
+     position: absolute;
+     top: 50%;
+     left:32.5%;
+}
+ .cartheader2{
+     font-size:30px;
+     font-family: 'Sansita', sans-serif;
+     float:left;
+     position: absolute;
+     top: 50%;
+     left:50%;
+}
+ .cartheader3{
+     font-size:30px;
+     font-family: 'Sansita', sans-serif;
+     float:left;
+     position: absolute;
+     top: 50%;
+     left:71.5%;
+}
+ * {
+    box-sizing:border-box
+}
+/* Slideshow container */
+ .slideshow-container {
+     max-width: 250px;
+     position: relative;
+     top:150%;
+     margin: auto;
+}
+ .mySlides {
+     display: none;
+}
+/* Next & previous buttons */
+ .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+ .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+     background-color: white;
+}
+/* Caption text */
+ .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+}
+/* Number text (1/3 etc) */
+ .numbertext {
+     color: #f2f2f2;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+}
+/* The dots/bullets/indicators */
+ .dot {
+     cursor:pointer;
+     height: 13px;
+     width: 13px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+}
+/* Fading animation */
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+ @-webkit-keyframes fade {
+     from {
+        display: block;
+    }
+     to {
+        margin: 0;
+    }
+}
+ @keyframes fade {
+     from {
+        opacity: .4
+    }
+     to {
+        opacity: 1
+    }
+}
+ .slide{
+     position: absolute;
+     top: 125%;
+     left: 60%;
+}
+ .headslide{
+     font-size:20px;
+     font-family: 'Sansita', sans-serif;
+}
+ 
